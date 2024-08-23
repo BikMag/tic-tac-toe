@@ -2,7 +2,7 @@
 
 document.addEventListener("keydown", function (e) {
   switch (e.code) {
-    case "keyR":
+    case "KeyR":
       replay();
       break;
     case "KeyT":
