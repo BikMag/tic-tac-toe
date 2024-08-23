@@ -1,0 +1,90 @@
+body {
+  --bg-color: white;
+  --text-color: black;
+  --primary-color: rgb(173, 255, 255);
+  --secondary-color: aliceblue;
+  --x-color: red;
+  --o-color: rgb(0, 214, 0);
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition: all 0.5s;
+}
+
+body[data-dark] {
+  --bg-color: rgb(34, 34, 34);
+  --text-color: white;
+  --primary-color: rgb(92, 226, 226);
+  --secondary-color: rgb(199, 226, 250);
+  --x-color: red;
+  --o-color: rgb(0, 214, 0);
+}
+
+body * {
+  color: var(--text-color);
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+#tic-tac-field {
+  border-spacing: 2px;
+  border-radius: 18px;
+  background-color: var(--primary-color);
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+#tic-tac-field .cell {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: all .2s;
+
+  &[data-sign=X] {
+    background-color: var(--x-color);
+  }
+
+  &[data-sign=O] {
+    background-color: var(--o-color);
+  }
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
+.replay {
+  font-size: 14pt;
+}

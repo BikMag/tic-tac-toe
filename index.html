@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="changeTheme()">Change theme</button>
+    <section>
+      <h1 class="title">Tic-Tac-Toe</h1>
+      <table id="tic-tac-field">
+        <caption>
+          Ходят:
+        </caption>
+        <tbody>
+          <tr>
+            <th class="cell"></th>
+            <th class="cell"></th>
+            <th class="cell"></th>
+          </tr>
+          <tr>
+            <th class="cell"></th>
+            <th class="cell"></th>
+            <th class="cell"></th>
+          </tr>
+          <tr>
+            <th class="cell"></th>
+            <th class="cell"></th>
+            <th class="cell"></th>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="replay" onclick="replay()">Replay</button>
+    </section>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/key-handlers.js"></script>
+    <script src="scripts/change-theme.js"></script>
+  </body>
+</html>
