@@ -55,6 +55,7 @@ function getWinner() {
   }
   if (signs.join("").length == 9) {
     alert("Ничья!");
+    return true;
   }
 
   return false;
